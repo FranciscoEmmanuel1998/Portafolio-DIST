@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "keyword": "agua",
+    "message": "Las emociones fluyen libremente. El agua en sueños representa tu estado emocional. Permite que las emociones te guíen hacia la claridad.",
+    "symbol": "💧",
+    "interpretation": "Emociones, purificación, fluidez"
+  },
+  {
+    "id": 2,
+    "keyword": "volar",
+    "message": "Libertad del espíritu y trascendencia de limitaciones. Tu alma busca elevarse por encima de las preocupaciones mundanas.",
+    "symbol": "🕊️",
+    "interpretation": "Libertad, aspiraciones, superación"
+  },
+  {
+    "id": 3,
+    "keyword": "caer",
+    "message": "Pérdida de control o miedos profundos. Examina qué aspectos de tu vida te hacen sentir vulnerable o inseguro.",
+    "symbol": "⬇️",
+    "interpretation": "Miedo, inseguridad, pérdida de control"
+  },
+  {
+    "id": 4,
+    "keyword": "casa",
+    "message": "Tu espacio interior y sentido de seguridad. La casa representa tu psique y cómo te sientes contigo mismo.",
+    "symbol": "🏠",
+    "interpretation": "Seguridad, hogar interior, autoimagen"
+  },
+  {
+    "id": 5,
+    "keyword": "animal",
+    "message": "Instintos primitivos y sabiduría natural. Los animales en sueños representan aspectos de tu naturaleza que necesitan atención.",
+    "symbol": "🐺",
+    "interpretation": "Instintos, naturaleza primitiva, sabiduría animal"
+  },
+  {
+    "id": 6,
+    "keyword": "fuego",
+    "message": "Pasión, transformación y purificación. El fuego consume lo viejo para dar nacimiento a lo nuevo. Abraza el cambio.",
+    "symbol": "🔥",
+    "interpretation": "Pasión, transformación, energía creativa"
+  },
+  {
+    "id": 7,
+    "keyword": "muerte",
+    "message": "Fin de ciclos y renacimiento. La muerte en sueños raramente es literal; representa transformaciones profundas en tu vida.",
+    "symbol": "🌙",
+    "interpretation": "Transformación, fin de ciclos, renacimiento"
+  },
+  {
+    "id": 8,
+    "keyword": "camino",
+    "message": "Tu dirección en la vida y las decisiones que debes tomar. Cada sendero representa diferentes aspectos de tu viaje personal.",
+    "symbol": "🛤️",
+    "interpretation": "Dirección vital, decisiones, camino personal"
+  },
+  {
+    "id": 9,
+    "keyword": "luz",
+    "message": "Iluminación espiritual y claridad mental. La luz representa comprensión y guía divina en tu camino.",
+    "symbol": "✨",
+    "interpretation": "Iluminación, claridad, guía espiritual"
+  },
+  {
+    "id": 10,
+    "keyword": "oscuridad",
+    "message": "Lo desconocido y los miedos inconscientes. La oscuridad invita a explorar aspectos ocultos de ti mismo con valentía.",
+    "symbol": "🌑",
+    "interpretation": "Inconsciente, miedos, misterio interior"
+  },
+  {
+    "id": 11,
+    "keyword": "perseguir",
+    "message": "Algo en tu vida te presiona o evitas enfrentar. Identifica qué situación necesitas resolver en lugar de huir.",
+    "symbol": "🏃‍♂️",
+    "interpretation": "Evasión, presión, situaciones pendientes"
+  },
+  {
+    "id": 12,
+    "keyword": "espejo",
+    "message": "Autorreflexión y autoconocimiento. Los espejos muestran verdades sobre ti mismo que necesitas reconocer.",
+    "symbol": "🪞",
+    "interpretation": "Autorreflexión, verdad personal, autoconocimiento"
+  }
+]

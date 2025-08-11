@@ -1,0 +1,84 @@
+name: 🔥 TradingVision Pro CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality-gate:
+    name: 🎯 Quality Gate - Zero Tolerance
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📡 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🚀 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 📦 Install Dependencies
+      run: npm ci
+      
+    - name: 🔍 TypeScript Strict Check
+      run: npx tsc --noEmit --strict
+      
+    - name: 🧹 ESLint Analysis
+      run: npm run lint || true
+      
+    - name: 🧪 Unit Tests
+      run: npm run test:coverage
+      
+    - name: 🏗️ Build Verification
+      run: npm run build
+      
+    - name: 📊 Bundle Analysis
+      run: npm run analyze || true
+
+  security-scan:
+    name: 🛡️ Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📡 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🔒 Security Audit
+      run: npm audit --audit-level=moderate
+      
+    - name: 🕵️ Dependency Check
+      run: npx audit-ci --moderate
+
+  performance-test:
+    name: ⚡ Performance Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📡 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🚀 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: 📦 Install Dependencies
+      run: npm ci
+      
+    - name: 🏗️ Build
+      run: npm run build
+      
+    - name: 📏 Bundle Size Check
+      run: |
+        BUNDLE_SIZE=$(ls -la dist/assets/*.js | awk '{sum += $5} END {print sum}')
+        echo "Bundle size: $BUNDLE_SIZE bytes"
+        if [ $BUNDLE_SIZE -gt 1000000 ]; then
+          echo "❌ Bundle size too large: $BUNDLE_SIZE bytes (limit: 1MB)"
+          exit 1
+        fi
+        echo "✅ Bundle size acceptable"

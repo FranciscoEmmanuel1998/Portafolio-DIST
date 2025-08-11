@@ -1,0 +1,6 @@
+[
+  { "id": "welcome", "command": "start", "dialog": "¡Bienvenido a DIST!...", "action": { "scrollTo": "#about" }, "badge": "Explorador Novato" },
+  { "id": "skills", "command": "next", "dialog": "Chequea mis Skills...", "action": { "scrollTo": "#skills" }, "badge": "Voyeur de Skills" },
+  { "id": "oracle", "command": "oracle", "dialog": "Invocando Oráculo Cuántico...", "action": { "loadModule": "QuantumOracles" }, "badge": "Consultor Cuántico" },
+  { "id": "finish", "command": "finish", "dialog": "Tour completado...", "action": { "showCertificate": true }, "badge": "Explorador DIST" }
+]
