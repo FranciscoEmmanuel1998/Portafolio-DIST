@@ -1,4 +1,4 @@
-/* Estilos profesionales para scrollbars - Archivo CSS dedicado */
+﻿/* Estilos profesionales para scrollbars - Archivo CSS dedicado */
 
 /* Scrollbar principal para lista de fragmentos */
 .professional-scroll {
@@ -76,3 +76,4 @@
   scrollbar-width: thin;
   scrollbar-color: rgba(59, 130, 246, 0.7) transparent;
 }
+

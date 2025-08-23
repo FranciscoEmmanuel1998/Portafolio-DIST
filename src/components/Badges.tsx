@@ -1,4 +1,4 @@
-import { useTour } from '@/context/TourContext';
+﻿import { useTour } from '@/context/TourContext';
 
 const Badges = (): JSX.Element | null => {
   const { completed } = useTour();
@@ -20,3 +20,4 @@ const Badges = (): JSX.Element | null => {
 };
 
 export default Badges;
+

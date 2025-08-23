@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+﻿import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import script from '@/data/tourScript.json';
 import useTourActions from '@/hooks/useTourActions';
 import { TourContextValue } from '@/types/TourContext';
@@ -45,16 +45,16 @@ export const TourProvider = ({ children }: { children: ReactNode }) => {
     prompts: '/prompts',
     notas: '/prompts',
     configuracion: '/settings',
-    animacion: 'http://192.168.1.70:8080/', // ahora URL externa
-    trading: '/trading',
-    oraculos: '/trading',
+    animacion: 'https://museo.animarex.xyz', // ahora URL externa
+    trading: 'https://trading.animarex.xyz',
+    oraculos: 'https://trading.animarex.xyz',
     bienvenida: '/welcome',
     archetype: '/archetypes',
     console: '/dungeon',
     nonlinear: '/learning',
     prompt: '/prompts',
     settings: '/settings',
-    animation: 'http://192.168.1.70:8080/', // alias inglés también externa
+    animation: 'https://museo.animarex.xyz', // alias inglés también externa
     oracle: '/professional',
     welcome: '/welcome'
   };
@@ -197,3 +197,4 @@ export const useTour = () => {
   if (!ctx) throw new Error('useTour must be used within TourProvider');
   return ctx;
 };
+

@@ -1,4 +1,4 @@
-import iching from '../data/iching.json';
+﻿import iching from '../data/iching.json';
 import tarot from '../data/tarot.json';
 import runes from '../data/runes.json';
 import dreams from '../data/dreams.json';
@@ -650,3 +650,4 @@ export function generateRunesResponse(query) {
 export function generateDreamsResponse(query) {
   return generateAdvancedDreamsResponse(query);
 }
+

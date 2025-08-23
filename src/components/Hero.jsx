@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -42,7 +42,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-           Ingeniero de soporte CONTPAQi senior: transformo los flujos contables y fiscales en procesos automáticos, seguros y sin errores, dominando CFDI 4.0, SQL y desarrollo full-stack.
+          
+Soy desarrollador full-stack con más de 2 años de experiencia técnica trabajando con sistemas empresariales como CONTPAQi y creando soluciones personalizadas para optimizar procesos internos.
+Actualmente, estoy enfocado en el desarrollo web con React, Node.js y automatización de procesos con IA. 
           </motion.p>
 
           <motion.div
@@ -55,6 +57,7 @@ const Hero = () => {
               onClick={() => scrollToSection('#projects')}
               size="lg"
               className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 glow-effect pulse-glow"
+              style={{ padding: '1rem 2rem', fontSize: '1.25rem' }} // Ajusta el tamaño del botón
             >
               Ver Proyectos
             </Button>
@@ -63,6 +66,7 @@ const Hero = () => {
               variant="outline"
               size="lg"
               className="border-white/30 text-white hover:bg-white/10"
+              style={{ padding: '1rem 2rem', fontSize: '1.25rem' }} // Ajusta el tamaño del botón
             >
               Contáctame
             </Button>
@@ -75,7 +79,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <motion.a
-              href="https://github.com/tu-usuario" // Cambia por tu usuario real
+              href="https://github.com/FranciscoEmmanuel1998" // Cambia por tu usuario real
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
@@ -86,7 +90,7 @@ const Hero = () => {
               <Github className="w-6 h-6 text-white" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/tu-linkedin" // Cambia por tu perfil real
+              href="https://www.linkedin.com/in/emmanuel-arias-741b04278/" // Cambia por tu perfil real
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: -5 }}
@@ -117,7 +121,7 @@ const Hero = () => {
         >
           <motion.button
             onClick={() => scrollToSection('#about')}
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 200, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             className="p-2 glass-effect rounded-full hover:glow-effect transition-all duration-300"
           >

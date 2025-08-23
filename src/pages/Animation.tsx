@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 
 // Página placeholder: la animación interna fue eliminada.
 // Al montar, abrimos la versión externa y mostramos un aviso / enlace de respaldo.

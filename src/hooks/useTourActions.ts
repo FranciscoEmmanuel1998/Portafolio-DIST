@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { toast } from '@/components/ui/use-toast';
 
 export default function useTourActions() {
@@ -22,3 +22,4 @@ export default function useTourActions() {
 
   return { scrollTo, loadModule, showCertificate };
 }
+

@@ -1,4 +1,4 @@
-// Professional Trading Types System
+﻿// Professional Trading Types System
 export interface MarketCandle {
   timestamp: number;
   open: number;
@@ -221,3 +221,4 @@ export class WebSocketError extends Error {
     this.name = 'WebSocketError';
   }
 }
+

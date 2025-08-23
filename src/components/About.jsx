@@ -1,29 +1,54 @@
-import React from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Palette, Zap, Code, FileJson, Database } from 'lucide-react';
+import { Terminal, Palette, Zap, Code, FileJson, Database,Brain } from 'lucide-react';
 import image from '../images/fondo.jpg';
 
 const About = () => {
+   const setupImages = [
+    {
+      src: '/images/yo.jpg',
+      alt: 'Setup de escritorio con tres monitores y teclado RGB',
+      className: 'h-96 object-contain rounded-xl', // <- mostrar completa sin recorte
+    },
+    {
+      src: '/images/fondo.jpg',
+      alt: 'Setup de escritorio con varios monitores y ambiente profesional',
+      className: 'w-full h-80 object-cover rounded-xl mb-6',
+    },
+  ];
+    const [currentImage, setCurrentImage] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentImage((prev) => (prev + 1) % setupImages.length);
+      }, 3000); // Cambia cada 3 segundos
+      return () => clearInterval(interval);
+    }, []);
   const features = [
     {
       icon: Database,
       title: 'Desarrollo Full-Stack',
-      description: 'Front-end y back-end con JavaScript/TypeScript (React, Tailwind), Python y SQL Server.'
-    },  
+      description: 'React, Next.js, TypeScript, Tailwind, Node.js, WebSockets, APIs REST.'
+    },
+     {
+      icon: Brain,
+      title: 'Automatización e IA',
+      description: 'Integración de ChatGPT, LangChain, Ollama y desarrollo de asistentes internos.'
+    },
     {
       icon: Palette,
       title: 'Diseño UI/UX Funcional',
-      description: 'Creo interfaces claras, limpias y enfocadas en la acción. Diseño experiencias que no solo se ven bien, sino que mejoran la eficiencia real del usuario en cada clic.'
+      description: 'Experiencia en UI/UX centrada en la acción y la usabilidad.'
     },
     {
       icon: FileJson,
-      title: 'Especialista CONTPAQi & Fiscal',
-      description: 'Conocimiento completo de interfaces y dominio de Comercial Premium, Start/Pro, Contabilidad, Bancos, Nóminas y Factura Electrónica.'
+      title: 'Sistemas Empresariales',
+      description: 'Experto en ecosistema CONTPAQi (Comercial Premium, Bancos, Contabilidad, Nóminas).'
     },
     {
       icon: Zap,
-      title: 'Diagnóstico, Soporte y Resolución Real',
-      description: 'Transformo usuarios en expertos mediante cursos prácticos y guías paso a paso; dejo procesos claros, reproducibles y libres de dependencia técnica'
+      title: 'Optimización de Procesos',
+      description: 'Documentación clara, capacitación efectiva y soporte técnico avanzado.'
     }
   ];
 
@@ -45,9 +70,9 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gradient">Acerca de Mí</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ingeniero de soporte senior y Full-Stack Developer. Domino JavaScript/TypeScript (React, Tailwind), Python (LangChain, Ollama) y SQL Server.
-Cuento con 2 años de experiencia especializada en el ecosistema CONTPAQi (Factura Electrónica, Comercial Premium, Start/Pro, Contabilidad, Bancos y Nóminas), donde he resuelto más de 2 000 tickets de soporte técnico, configuración, capacitación y personalización, con un índice de satisfacción del 96 %.
+          <p className="text-2xl text-gray-300 max-w-3xl mx-auto w-full">
+            Desarrollador Full-Stack | Especialista en Automatización e IA
+Apasionado por crear soluciones que combinan tecnología, diseño y estrategia
           </p>
         </motion.div>
 
@@ -59,12 +84,22 @@ Cuento con 2 años de experiencia especializada en el ecosistema CONTPAQi (Factu
             viewport={{ once: false }}
           >
             <div className="glass-effect rounded-2xl p-8 hover:glow-effect transition-all duration-300">
-              <img  
-                className="w-full h-80 object-cover rounded-xl mb-6" 
-                alt="Desarrollador trabajando en código"
-                src={image} 
-              />
-              <p className="text-gray-300 leading-relaxed">
+              <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            viewport={{ once: true }}
+                            className="glass-effect rounded-2xl p-8"
+                          >
+                            <div className="w-full h-64 flex items-center justify-center">
+                              <img
+  className={`w-full ${setupImages[currentImage].className} transition-all duration-700`}
+  alt={setupImages[currentImage].alt}
+  src={setupImages[currentImage].src}
+/>
+                            </div>
+                          </motion.div>
+              <p className="text-gray-300 leading-relaxed" style={{ paddingTop: '2rem' }}>
                 Me apasiona la automatización de procesos y en mis tiempos libres diseño arquitecturas de inteligencia artificial con enfoque innovador.
 Mi lema es claro: convertir datos en decisiones estratégicas.
               </p>
@@ -76,7 +111,7 @@ Mi lema es claro: convertir datos en decisiones estratégicas.
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
-            className="space-y-6"
+            className="space-y-4"
           >
             {features.map((feature, index) => (
               <motion.div

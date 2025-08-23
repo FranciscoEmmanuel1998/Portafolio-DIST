@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+﻿import React, { useState, useCallback } from 'react';
 
 // Estado global para los toasts
 let toastCounter = 0;
@@ -75,3 +75,4 @@ const toast = ({ title, description, variant = 'default' }) => {
 };
 
 export { useToast, toast };
+

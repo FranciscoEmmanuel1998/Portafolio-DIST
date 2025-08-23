@@ -1,4 +1,4 @@
-// Simple synthesized sound system mapping gameplay log categories to distinct tones
+﻿// Simple synthesized sound system mapping gameplay log categories to distinct tones
 // Generates tones via Web Audio API to avoid adding multiple asset files.
 
 export type SoundCategory =
@@ -94,3 +94,4 @@ export function playCategory(cat: SoundCategory) {
 }
 
 export function primeAudio() { ensureCtx() }
+

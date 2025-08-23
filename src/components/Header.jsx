@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -19,8 +19,7 @@ const Header = () => {
     { name: 'Inicio', href: '#hero' },
     { name: 'Acerca', href: '#about' },
     { name: 'Habilidades', href: '#skills' },
-    { name: 'Proyectos', href: '#projects' },
-    { name: 'Contacto', href: '#contact' }
+    { name: 'Proyectos', href: '#projects' }
   ];
 
   const scrollToSection = (href) => {

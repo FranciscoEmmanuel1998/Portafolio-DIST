@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+﻿import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 interface AudioConfig {
   frequencies: number[];
@@ -46,7 +46,7 @@ const ROBOT_PRESETS: Record<string, RobotPreset> = {
     name: 'Cyberpunk Neón',
     description: 'Personalidad audaz y futurista, amante del resplandor neón',
     theme: 'dark',
-    image: '/src/images/CyberPunk.png',
+    image: '/images/CyberPunk.png',
     colors: {
       primary: '#00ffff',
       secondary: '#ff00ff',
@@ -68,7 +68,7 @@ const ROBOT_PRESETS: Record<string, RobotPreset> = {
     name: 'Dorado Imperial',
     description: 'Personalidad noble y elegante, maestra del lujo imperial',
     theme: 'luxury',
-    image: '/src/images/Dorado imperial.png',
+    image: '/images/Dorado-imperial.png',
     colors: {
       primary: '#FFD700',
       secondary: '#FFA500',
@@ -90,7 +90,7 @@ const ROBOT_PRESETS: Record<string, RobotPreset> = {
     name: 'Arquetipo Carmesí',
     description: 'Carácter vibrante y efervescente, desbordando color.',
     theme: 'light',
-    image: '/src/images/Arquetipo Carmesí.png',
+    image: '/images/Arquetipo-Carmesi.png',
     colors: {
       primary: '#e74c3c',
       secondary: '#f39c12',
@@ -247,3 +247,4 @@ export const RobotProvider: React.FC<RobotProviderProps> = ({ children }) => {
 };
 
 export default RobotContext;
+

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 export type FC<P = {}> = React.FC<React.PropsWithChildren<P>>;
 
@@ -32,3 +32,4 @@ export interface InputProps {
   error?: string;
   disabled?: boolean;
 }
+

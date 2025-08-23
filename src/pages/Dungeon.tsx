@@ -1,4 +1,4 @@
-// AIRoguelike.tsx — Ciclo 5  (≈ 835 líneas)
+﻿// AIRoguelike.tsx — Ciclo 5  (≈ 835 líneas)
 // /* @jsxRuntime automatic @jsxImportSource react */
 import { useEffect, useReducer, useState, useRef } from 'react'
 import { categorizeLogMessage, playCategory, primeAudio } from '../lib/sound'
@@ -2782,3 +2782,4 @@ export default function AIRoguelike() {
     </div>
   )
 }
+

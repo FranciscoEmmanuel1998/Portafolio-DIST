@@ -1,12 +1,12 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' }
+    { icon: Github, href: 'https://github.com/FranciscoEmmanuel1998', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/emmanuel-arias-741b04278/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:ceo@boutiquest.shop', label: 'Email' }
   ];
 
   return (
@@ -54,7 +54,7 @@ const Footer = () => {
               <p className="text-gray-400 flex items-center justify-center">
                 <span>Hecho con</span>
                 <Heart className="w-4 h-4 mx-2 text-red-500" />
-                <span>por Francisco Emmanuel Developer © 2025</span>
+                <span>por Francisco Emmanuel  © 2025</span>
               </p>
             </div>
           </div>

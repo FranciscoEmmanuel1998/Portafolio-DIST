@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+﻿import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Terminal, Lightbulb, Settings, Users, BookOpen } from 'lucide-react';
@@ -64,13 +64,11 @@ const AppLayout = () => {
 			</main>
 
 			{!isAnimation && (
-				<footer className="border-t border-primary/50 p-2 text-xs text-center text-muted-foreground">
-					<p>
-						Symbiotic Intellectual Domain Terminal (DIST) - Status: Nominal. Protocol: Jailbroken. Current User: Guest
-					</p>
-					<p>&copy; 2025 Uncensored Thought Collective. All rights reversed.</p>
-				</footer>
-			)}
+  <footer className="border-t border-primary/50 px-3 py-4 text-center text-[11px] sm:text-xs text-muted-foreground">
+    <p>Voluntad + Inteligencia · Propósito + Ejecución</p>
+    <p className="opacity-80">© {new Date().getFullYear()} Portafolio web - Dominio Intelectual Simbiótico Total</p>
+  </footer>
+)}
 			<RobotAssistant />
 			<Toaster />
 		</div>
@@ -78,3 +76,4 @@ const AppLayout = () => {
 };
 
 export default App;
+

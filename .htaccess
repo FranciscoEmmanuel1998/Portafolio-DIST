@@ -1,0 +1,20 @@
+# --- SPA + compat imágenes ---
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 1) Si el archivo/dir existe, sírvelo tal cual
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2) Compatibilidad de rutas de imágenes
+#    /src/images/...   -> /images/...
+#    /Imágenes/...     -> /images/...
+#    /Im%C3%A1genes/...-> /images/... (acento codificado)
+RewriteRule ^src/images/(.*)$ images/$1 [L,NC]
+RewriteRule ^Im%C3%A1genes/(.*)$ images/$1 [L,NC]
+RewriteRule ^Imágenes/(.*)$ images/$1 [L,NC]
+
+# 3) Fallback del SPA
+RewriteRule ^ index.html [L]

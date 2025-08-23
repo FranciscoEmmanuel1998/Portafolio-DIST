@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+﻿import { useCallback, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Users, Shuffle, Download, ClipboardCopy, AlertTriangle } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
@@ -317,4 +317,5 @@ const ArchetypeGenerator = () => {
 };
 
 export default ArchetypeGenerator;
+
 

@@ -1,4 +1,4 @@
-export interface TourStep {
+﻿export interface TourStep {
   id: string;
   title?: string;
   content?: string;
@@ -34,3 +34,4 @@ export interface TourContextValue {
 export interface TourProviderProps {
   children: React.ReactNode;
 }
+

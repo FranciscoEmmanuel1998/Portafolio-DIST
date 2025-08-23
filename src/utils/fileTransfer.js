@@ -1,4 +1,4 @@
-// 📦 File Transfer Utilities for NonLinear Learning
+﻿// 📦 File Transfer Utilities for NonLinear Learning
 // Utilities para manejo de archivos JSON - descargar y leer
 
 export const downloadJson = (data, filename = 'progreso-aprendizaje.json') => {
@@ -33,3 +33,4 @@ export const readJsonFile = (file) =>
     };
     reader.readAsText(file);
   });
+

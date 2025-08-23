@@ -1,4 +1,4 @@
-export interface SettingsState {
+﻿export interface SettingsState {
   darkMode: boolean;
   greenMode: boolean;
   autoAdvance: boolean;
@@ -43,3 +43,4 @@ export function getTheme(settings: SettingsState) {
     gradient: 'bg-gradient-to-br from-gray-100 via-gray-50 to-white'
   };
 }
+

@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+﻿import React, { useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Palette, Volume2, VolumeX } from 'lucide-react';
 import { useToast } from '../components/ui/use-toast';
@@ -100,7 +100,7 @@ const SettingsPage: React.FC = () => {
             <Palette className="w-6 h-6" /> Estilos Predefinidos
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Object.entries(presets).map(([key, preset]) => (
               <motion.div
                 key={key}
@@ -117,13 +117,13 @@ const SettingsPage: React.FC = () => {
                   <img 
                     src={preset.image} 
                     alt={`Robot ${preset.name}`}
-                    className="w-8 h-8 object-cover rounded-full border-2"
-                    style={{ borderColor: preset.colors.primary }}
+                    className="object-cover rounded-full border-2"
+                    style={{  width: '100px', height: '100px',borderColor: preset.colors.primary }}
                   />
-                  <h4 className="font-semibold text-lg">{preset.name}</h4>
+                  <h4 style={{padding: '0.7rem' }} className="font-semibold text-xl">{preset.name}</h4>
                 </div>
                 
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-lg text-muted-foreground mb-3">
                   {preset.description}
                 </p>
                 
@@ -248,3 +248,4 @@ const SettingsPage: React.FC = () => {
 };
 
 export default SettingsPage;
+

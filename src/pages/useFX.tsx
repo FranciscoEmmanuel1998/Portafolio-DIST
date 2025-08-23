@@ -1,4 +1,4 @@
-// fx.tsx — Hook + Canvas + FX components (React + Framer Motion)
+﻿// fx.tsx — Hook + Canvas + FX components (React + Framer Motion)
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -357,3 +357,4 @@ const FXArc: React.FC<{ e: InternalFx; tileSize: number }> = ({ e, tileSize }) =
     />
   );
 };
+

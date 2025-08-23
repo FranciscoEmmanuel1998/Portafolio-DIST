@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 import type { ReactNode } from 'react';
 
@@ -120,3 +120,4 @@ export const TradingLayoutConfigs = {
     wide: 4
   }
 } as const;
+

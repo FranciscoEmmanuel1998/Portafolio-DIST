@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+﻿import { useContext } from 'react';
 import { TourContext } from '@/context/TourContext';
 import { TourContextValue } from '@/types/TourContext';
 
@@ -13,3 +13,4 @@ export function useTour(): TourContextValue {
 export function useTourOptional(): TourContextValue | undefined {
   return useContext(TourContext);
 }
+

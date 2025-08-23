@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+﻿import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Edit3, PlusCircle, Save, Trash2, Copy, Search, StickyNote, Calendar, Tag, Pin, Download, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -482,3 +482,4 @@ const NotesPage = () => {
 };
 
 export default NotesPage;
+

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+﻿import { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTour } from '@/context/TourContext';
 import { useRobotConfig } from '@/context/RobotContext';
@@ -478,3 +478,4 @@ const RobotAssistant = (): JSX.Element => {
 };
 
 export default RobotAssistant;
+

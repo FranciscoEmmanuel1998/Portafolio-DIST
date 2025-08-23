@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom';
+﻿import '@testing-library/jest-dom';
 import { vi } from 'vitest';
 
 // Mock AudioContext for tests
@@ -60,3 +60,4 @@ global.console = {
   error: vi.fn(),
   log: vi.fn()
 };
+

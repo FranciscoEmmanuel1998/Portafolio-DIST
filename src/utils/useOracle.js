@@ -1,4 +1,4 @@
-// utils/useOracle.js
+﻿// utils/useOracle.js
 import {
   generateAdvancedIChingResponse,
   generateAdvancedTarotResponse,
@@ -37,3 +37,4 @@ export function useOracle() {
 
   return { answer, loading, consult, profile: getUserProfile() };
 }
+
