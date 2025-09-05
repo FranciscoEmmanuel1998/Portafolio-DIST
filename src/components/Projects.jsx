@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT especializado en CONTPAQi Nóminas, capaz de responder preguntas y guiar procesos de cálculo, timbrado y dispersión de nómina, así como resolver incidencias y optimizar configuraciones.",
       image: "/images/InterfazdeChatbotconRobotAmistosomorado.png",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfile"],
       liveUrl: "https://chatgpt.com/g/g-FiQYFKIA0-contpaqi-nominas",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT especializado en CONTPAQi Factura Electrónica: emisión, recepción y cancelación de CFDI 4.0, resolución de errores de timbrado y configuración de catálogos conforme al SAT.",
       image: "/images/InterfazdeChatbotconRobotAmistosoVerde.png",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfile"],
       liveUrl: "https://chatgpt.com/g/g-it5u2DYzv-contpaqi-factura-electronica",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",
     },
@@ -28,7 +28,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT para CONTPAQi Contabilidad: pólizas, balanzas, contabilidad electrónica y reportes fiscales, garantizando la correcta generación de XML y DIOT.",
       image: "/images/InterfazdeChatconRobotAmistosoazul.png",
-      technologies: ["React", "D3.js", "OpenWeather API", "Tailwind"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfile"],
       liveUrl: "https://chatgpt.com/g/g-hkjPAVdUN-contpaqi-contabilidad",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",
     },
@@ -37,7 +37,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT para CONTPAQi Bancos: conciliación de movimientos, importación de estados de cuenta, detección de diferencias y reglas de automatización.",
       image: "/images/InterfazdeChatbotconRobotAmistosoblanco.png",
-      technologies: ["Vue.js", "Python", "FastAPI", "Chart.js"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfile"],
       liveUrl: "https://chatgpt.com/g/g-P2OsJeMl1-contpaqi-bancos",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",
     },
@@ -46,7 +46,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT para CONTPAQi Comercial Premium: inventarios, compras, ventas y CxC/CxP; automatización de reportes y depuración de inconsistencias.",
       image: "/images/InterfazdeChatbotconRobotAmistosoGris.png",
-      technologies: ["React", "Express", "MySQL", "AWS S3"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfile"],
       liveUrl: "https://chatgpt.com/g/g-qoudqMUnj-contpaqi-comercial",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",
     },
@@ -55,7 +55,7 @@ const Projects = () => {
       description:
         "Robot tipo GPT para CONTPAQi Comercial Start/Pro (pymes): flujo de operaciones, folios, listas de precios y generación de documentos comerciales.",
       image: "/images/InterfazdeChatbotconRobotAmistosoRojo.png",
-      technologies: ["React Native", "Redux", "CoinGecko API", "Firebase"],
+      technologies: ["Go", "TypeScript", "JavaScript ", "HTML / CSS","SQL","JSON","React","Vite","Tailwind","Zustand", "Dockerfileceq x"],
       liveUrl:
         "https://chatgpt.com/g/g-FfEt5t2MU-contpaqi-comercial-start-pro",
       githubUrl: "https://github.com/FranciscoEmmanuel1998/Catbot-de-IA-local",

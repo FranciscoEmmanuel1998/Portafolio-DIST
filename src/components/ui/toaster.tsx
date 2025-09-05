@@ -29,7 +29,14 @@ export function Toaster() {
 		<ToastProvider>
 			{(toasts || []).map(({ id, title, description, action, variant = 'default', ...props }) => {
 				return (
-					<Toast key={id} variant={variant} {...props}>
+					<Toast
+						key={id}
+						variant={variant}
+						{...props}
+						onOpenChange={(open) => {
+							if (!open && props.dismiss) props.dismiss();
+						}}
+					>
 						{getVariantIcon(variant)}
 						<div className="flex-1 pr-8">
 							{title && <ToastTitle className="text-sm font-semibold mb-1">{title}</ToastTitle>}
@@ -38,7 +45,7 @@ export function Toaster() {
 							)}
 						</div>
 						{action}
-						<ToastClose />
+						<ToastClose onClick={() => props.dismiss && props.dismiss()} />
 					</Toast>
 				);
 			})}

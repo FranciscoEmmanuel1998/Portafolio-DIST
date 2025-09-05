@@ -28,8 +28,8 @@ const RobotAssistant = (): JSX.Element => {
     
     style.textContent = `
       .robot-assistant-button {
-        width: 64px !important;
-        height: 64px !important;
+        width: 80px !important;
+        height: 80px !important;
         background: ${isGoldenTheme 
           ? `linear-gradient(135deg, ${colors.primary}, ${colors.secondary}, ${colors.accent}, #FFFF00, ${colors.primary})`
           : isCyberpunkTheme
@@ -259,6 +259,14 @@ const RobotAssistant = (): JSX.Element => {
         position: relative !important;
         z-index: 2 !important;
       }
+
+      .robot-assistant-button img {
+        width: 180px !important;
+        height: 80px !important;
+        object-fit: cover !important;
+        aspect-ratio: 1 / 1 !important;
+        border-radius: 35% !important;
+      }
     `;
     document.head.appendChild(style);
     return () => {
@@ -344,7 +352,7 @@ const RobotAssistant = (): JSX.Element => {
     <>
       <div className="relative">
         <motion.button
-          className="robot-assistant-button rounded-full flex items-center justify-center shadow-2xl hover:shadow-blue-500/40 hover:scale-110 transition-all duration-300 text-3xl border-2 border-white/20 backdrop-blur-sm relative overflow-hidden group"
+          className="robot-assistant-button p-2 rounded-full flex items-center justify-center shadow-2xl hover:shadow-blue-500/40 hover:scale-110 transition-all duration-300 text-3xl border-2 border-white/20 backdrop-blur-sm relative overflow-hidden group"
           onClick={handleTogglePanel}
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
@@ -354,10 +362,10 @@ const RobotAssistant = (): JSX.Element => {
         >
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-transparent to-purple-500/20 group-hover:opacity-100 opacity-60 transition-opacity duration-300"></div>
           <div className="absolute inset-0 rounded-full border-2 border-white/10 group-hover:border-white/30 transition-colors duration-300"></div>
-          <img 
-            src={config.preset.image} 
+          <img
+            src={config.preset.image}
             alt={`Robot ${config.preset.name}`}
-            className="relative z-10 w-12 h-12 object-cover rounded-full filter drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+            className="relative z-10 w-full h-full object-contain aspect-square rounded-full filter drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse shadow-lg"></div>
         </motion.button>
